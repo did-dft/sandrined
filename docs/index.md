@@ -14,5 +14,5 @@ Bienvenue. Ceci est mon site personnel.
 
 Voici quelques certificats obtenus via Cisco Networking Academy (NetAcad) :
 
-- [Introduction to Cybersecurity – Cisco NetAcad](certificats/cisco-intro-cybersecurity.pdf)
-- [IT Essentials – Cisco NetAcad](certificats/cisco-it-essentials.pdf)
+- [Introduction to Cybersecurity – Cisco NetAcad](certificats/...)
+- [IT Essentials – Cisco NetAcad](certificats/...)
