@@ -1,0 +1,12 @@
+body {
+  background-color: #f3f5ff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+a {
+  color: #2b4c7e;
+}
+
+a:hover {
+  color: #1a3254;
+}
