@@ -47,3 +47,11 @@ h1, h2, h3 {
 .md-main {
   background: none !important;
 }
+/* Supprimer toutes les formes décoratives restantes */
+svg {
+  display: none !important;
+}
+/* Supprimer toutes les formes décoratives restantes */
+svg {
+  display: none !important;
+}
