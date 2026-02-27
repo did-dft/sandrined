@@ -109,4 +109,420 @@
         background: white;
         border-radius: 16px;
         padding: 2.5rem 2.5rem 2rem;
-        box-sh
+        box-shadow: 0 18px 45px rgba(15,23,42,0.12);
+        display: grid;
+        grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+        gap: 2rem;
+      }
+
+      .hero h2 {
+        margin-top: 0;
+        font-size: 2.1rem;
+      }
+
+      .hero p.lead {
+        font-size: 1rem;
+        color: #555;
+      }
+
+      .tagline {
+        display: inline-block;
+        padding: 0.15rem 0.75rem;
+        border-radius: 999px;
+        background: rgba(75,90,213,0.07);
+        color: var(--primary-dark);
+        font-size: 0.8rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        margin-bottom: 0.7rem;
+      }
+
+      .badges {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.6rem;
+        margin-top: 1rem;
+      }
+
+      .badge {
+        font-size: 0.8rem;
+        padding: 0.35rem 0.8rem;
+        border-radius: 999px;
+        background: #eef0ff;
+        color: var(--primary-dark);
+      }
+
+      .badge.accent {
+        background: #ffe4e4;
+        color: #b43333;
+      }
+
+      /* Grille de compétences */
+      .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 2rem;
+        margin-top: 1.5rem;
+      }
+
+      .skills-group-title {
+        font-weight: 600;
+        margin-bottom: 0.8rem;
+        font-size: 0.95rem;
+      }
+
+      .skill-item {
+        margin-bottom: 0.6rem;
+      }
+
+      .skill-label {
+        font-size: 0.85rem;
+        margin-bottom: 0.15rem;
+      }
+
+      .skill-bar {
+        height: 6px;
+        border-radius: 999px;
+        background: #e5e7eb;
+        overflow: hidden;
+      }
+
+      .skill-bar-fill {
+        height: 100%;
+        background: #4b5563;
+        border-radius: 999px;
+      }
+
+      /* Grille de badges de certificats */
+      .cert-badges {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-top: 1.5rem;
+      }
+
+      .cert-badge-item {
+        background: #ffffff;
+        border-radius: 12px;
+        padding: 0.7rem 0.9rem;
+        box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 180px;
+        text-decoration: none;
+      }
+
+      .cert-badge-item img {
+        height: 80px;
+        display: block;
+      }
+
+      .cert-badge-item span {
+        margin-top: 0.4rem;
+        font-size: 0.8rem;
+        text-align: center;
+        color: #374151;
+      }
+
+      .hero-side {
+        align-self: center;
+        text-align: right;
+      }
+
+      .hero-pill {
+        display: inline-block;
+        padding: 0.6rem 1.2rem;
+        border-radius: 999px;
+        background: #fff7f2;
+        border: 1px dashed rgba(249,115,115,0.5);
+        color: #b43333;
+        font-size: 0.8rem;
+      }
+
+      .links {
+        margin-top: 1.5rem;
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 0.7rem 1.4rem;
+        border-radius: 999px;
+        text-decoration: none;
+        font-size: 0.9rem;
+        font-weight: 600;
+        letter-spacing: 0.03em;
+        transition: background-color 0.2s ease, color 0.2s ease,
+                    transform 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .btn-primary {
+        background: var(--primary);
+        color: #ffffff;
+        box-shadow: 0 10px 25px rgba(75, 90, 213, 0.35);
+      }
+
+      .btn-primary:hover {
+        background: var(--primary-dark);
+        transform: translateY(-1px);
+        box-shadow: 0 14px 32px rgba(75, 90, 213, 0.45);
+      }
+
+      .btn-ghost {
+        border: 1px solid rgba(15, 23, 42, 0.15);
+        color: #374151;
+        margin-left: 0.6rem;
+        background: #ffffff;
+      }
+
+      .btn-ghost:hover {
+        border-color: var(--primary);
+        color: var(--primary-dark);
+        transform: translateY(-1px);
+        box-shadow: 0 8px 20px rgba(15, 23, 42, 0.12);
+      }
+
+      section {
+        margin-top: 2.5rem;
+      }
+
+      h3 {
+        margin-bottom: 0.2rem;
+      }
+
+      p.section-desc {
+        margin-top: 0;
+        color: #555;
+        font-size: 0.95rem;
+      }
+
+      ul {
+        padding-left: 1.2rem;
+      }
+
+      footer {
+        text-align: center;
+        color: #777;
+        font-size: 0.85rem;
+        padding: 1.5rem 0 2rem;
+      }
+
+      @media (max-width: 800px) {
+        .hero {
+          grid-template-columns: minmax(0, 1fr);
+          text-align: left;
+        }
+        .hero-side {
+          text-align: left;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="topbar-left">
+        <span class="logo">sandrined</span>
+        <nav class="topnav">
+          <a href="#home" class="nav-link active">/home</a>
+          <a href="#projets" class="nav-link">/projets</a>
+          <a href="#competences" class="nav-link">/competences</a>
+          <a href="#certificats" class="nav-link">/certificats</a>
+          <a href="#outils" class="nav-link">/outils</a>
+        </nav>
+      </div>
+      <div class="topbar-right">
+        <span class="top-icon">G</span>
+        <span class="top-icon">in</span>
+        <span class="top-icon">✉</span>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div>
+          <div class="tagline">Site personnel</div>
+          <h2>Bienvenue sur mon espace en ligne</h2>
+          <p class="lead">
+            Quelques pages simples pour me présenter, partager mes projets
+            et regrouper mes certificats techniques.
+          </p>
+          <div class="badges">
+            <span class="badge">IT / Réseaux</span>
+            <span class="badge">Cybersécurité</span>
+            <span class="badge accent">En apprentissage continu</span>
+          </div>
+          <div class="links">
+            <a class="btn btn-primary" href="#certificats">Voir mes certificats</a>
+            <a class="btn btn-ghost" href="#projets">Jeter un œil aux projets</a>
+          </div>
+        </div>
+        <div class="hero-side">
+          <div class="hero-pill">
+            Petite documentation personnelle,
+            <br>sans prétention, mais qui grandira avec moi.
+          </div>
+        </div>
+      </section>
+
+      <section id="projets">
+        <h3>Mes projets</h3>
+        <p class="section-desc">
+          Quelques idées en cours ou à venir. Cette liste évoluera avec le temps.
+        </p>
+        <ul>
+          <li>Projet 1 – à définir / en cours.</li>
+          <li>Projet 2 – à définir / en cours.</li>
+          <li>Projet 3 – à définir / en cours.</li>
+        </ul>
+      </section>
+
+      <section id="competences">
+        <h3>Compétences</h3>
+        <p class="section-desc">
+          Un aperçu des domaines techniques que j’explore actuellement.
+        </p>
+
+        <div class="skills-grid">
+          <div>
+            <div class="skills-group-title">Systèmes &amp; script</div>
+
+            <div class="skill-item">
+              <div class="skill-label">Linux</div>
+              <div class="skill-bar">
+                <div class="skill-bar-fill" style="width: 45%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-label">PowerShell</div>
+              <div class="skill-bar">
+                <div class="skill-bar-fill" style="width: 35%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="skills-group-title">Virtualisation</div>
+
+            <div class="skill-item">
+              <div class="skill-label">Proxmox</div>
+              <div class="skill-bar">
+                <div class="skill-bar-fill" style="width: 30%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-label">VMware</div>
+              <div class="skill-bar">
+                <div class="skill-bar-fill" style="width: 35%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-label">VirtualBox</div>
+              <div class="skill-bar">
+                <div class="skill-bar-fill" style="width: 40%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="skills-group-title">Outils &amp; collaboration</div>
+
+            <div class="skill-item">
+              <div class="skill-label">Git &amp; GitHub</div>
+              <div class="skill-bar">
+                <div class="skill-bar-fill" style="width: 40%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="outils">
+        <h3>Outils &amp; environnement</h3>
+        <p class="section-desc">
+          Les outils que j’utilise au quotidien pour apprendre, pratiquer et documenter.
+        </p>
+        <div class="badges">
+          <span class="badge">Visual Studio Code</span>
+          <span class="badge">Git &amp; GitHub</span>
+          <span class="badge">Cisco Packet Tracer</span>
+          <span class="badge">VirtualBox</span>
+          <span class="badge accent">Apprentissage autonome</span>
+        </div>
+      </section>
+
+      <section id="certificats">
+        <h3>Certificats</h3>
+        <p class="section-desc">
+          Quelques certificats obtenus.
+        </p>
+
+        <div class="cert-badges">
+          <!-- Badge 1 : Computer Hardware Basics -->
+          <a class="cert-badge-item"
+             href="https://www.credly.com/badges/9c57849c-e538-47db-9406-821746f2b6cf/public_url"
+             target="_blank" rel="noopener">
+            <img src="images/computer-hardware-basics.png"
+                 alt="Computer Hardware Basics">
+            <span>Computer Hardware Basics</span>
+          </a>
+
+          <!-- Badge 2 : Introduction to Cybersecurity -->
+          <a class="cert-badge-item"
+             href="https://www.credly.com/badges/ffb44076-f681-478f-bca1-09cb9717daa3/public_url"
+             target="_blank" rel="noopener">
+            <img src="images/introduction-to-cybersecurity.png"
+                 alt="Introduction to Cybersecurity">
+            <span>Introduction to Cybersecurity</span>
+          </a>
+
+          <!-- Badge 3 : Linux Unhatched -->
+          <a class="cert-badge-item"
+             href="#"
+             target="_blank" rel="noopener">
+            <img src="images/linux-unhatched.png"
+                 alt="Linux Unhatched">
+            <span>Linux Unhatched</span>
+          </a>
+
+          <!-- Badge 4 : Introduction to Modern AI -->
+          <a class="cert-badge-item"
+             href="#"
+             target="_blank" rel="noopener">
+            <img src="images/introduction-to-modern-ai.png"
+                 alt="Introduction to Modern AI">
+            <span>Introduction to Modern AI</span>
+          </a>
+        </div>
+      </section>
+
+      <section>
+        <h3>Et la suite&nbsp;?</h3>
+        <p class="section-desc">
+          Je prévois d’ajouter une page “À propos”, des notes techniques
+          et peut‑être un petit blog autour de la sécurité et du réseau.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      &copy; 2026 sandrined – hébergé sur GitHub Pages
+    </footer>
+
+    <script>
+      document.querySelectorAll('a[href^="#"]').forEach(function (link) {
+        link.addEventListener('click', function (e) {
+          e.preventDefault();
+          var targetId = this.getAttribute('href').substring(1);
+          var target = document.getElementById(targetId);
+          if (target) {
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
