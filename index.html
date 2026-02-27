@@ -151,6 +151,38 @@ background: rgba(75, 90, 213, 0.06);
         background: #ffe4e4;
         color: #b43333;
       }
+
+            .cert-badges {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-top: 1.5rem;
+      }
+
+      .cert-badge-item {
+        background: #ffffff;
+        border-radius: 12px;
+        padding: 0.7rem 0.9rem;
+        box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 180px;
+        text-decoration: none;
+      }
+
+      .cert-badge-item img {
+        height: 80px;
+        display: block;
+      }
+
+      .cert-badge-item span {
+        margin-top: 0.4rem;
+        font-size: 0.8rem;
+        text-align: center;
+        color: #374151;
+      }
+
       .hero-side {
         align-self: center;
         text-align: right;
@@ -313,13 +345,45 @@ background: rgba(75, 90, 213, 0.06);
     Quelques certificats obtenus.
   </p>
 
-  <a href="https://www.credly.com/badges/9c57849c-e538-47db-9406-821746f2b6cf/public_url"
-     target="_blank" rel="noopener">
-    <img src="images/computer-hardware-basics.png"
-         alt="Computer Hardware Basics"
-         style="height: 90px;">
-  </a>
+  <div class="cert-badges">
+    <!-- Badge 1 : Computer Hardware Basics -->
+    <a class="cert-badge-item"
+       href="https://www.credly.com/badges/9c57849c-e538-47db-9406-821746f2b6cf/public_url"
+       target="_blank" rel="noopener">
+      <img src="images/computer-hardware-basics.png"
+           alt="Computer Hardware Basics">
+      <span>Computer Hardware Basics</span>
+    </a>
+
+    <!-- Badge 2 : à adapter -->
+    <a class="cert-badge-item"
+       href="https://www.credly.com/badges/8148af19-2ac1-412f-a8c7-4fe010a3d58f/public_url"
+       target="_blank" rel="noopener">
+      <img src="images/linux-unhatched.png"
+           alt="Linux Unhatched">
+      <span>Linux Unhatched</span>
+    </a>
+
+        <!-- Badge 3 : à adapter -->
+    <a class="cert-badge-item"
+       href="https://www.credly.com/badges/657883ea-b29f-4b3c-b2c1-ed3ed09f7c7a/public_url"
+       target="_blank" rel="noopener">
+      <img src="images/introduction-to-modern-ai.png"
+           alt="Introduction à l'IA moderne">
+      <span>Introduction à l'IA moderne</span>
+    </a>
+
+    <!-- Badge 4 : à adapter -->
+    <a class="cert-badge-item"
+       href="https://www.credly.com/badges/ffb44076-f681-478f-bca1-09cb9717daa3/public_url"
+       target="_blank" rel="noopener">
+      <img src="images/introduction-to-cybersecurity (1).png"
+           alt="Introduction à la cybersécurité">
+      <span>Introduction à la cybersécurité</span>
+    </a>
+  </div>
 </section>
+
 
 
 
