@@ -333,52 +333,42 @@
         }
       }
 
-      /* Projets : grille de cartes légères */
+      /* Projets : liste légère sans cartes blanches */
       #projets {
         background: transparent;
-        border-radius: 0;
         padding: 0;
         box-shadow: none;
       }
 
-      .projects-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-        gap: 1.5rem;
+      .projects-list {
+        list-style: none;
+        padding-left: 0;
         margin-top: 1.5rem;
       }
 
-      .project-card {
-        background: #ffffff;
-        border-radius: 14px;
-        padding: 1.2rem 1.4rem;
-        box-shadow: 0 12px 30px rgba(15, 23, 42, 0.06);
-        border: 1px solid rgba(148, 163, 184, 0.25);
-        transition: transform 0.15s ease, box-shadow 0.15s ease;
+      .projects-list li {
+        margin-bottom: 1.4rem;
+        border-left: 3px solid rgba(75, 90, 213, 0.35);
+        padding-left: 0.8rem;
       }
 
-      .project-card h4 {
-        margin: 0 0 0.3rem;
-        font-size: 1.05rem;
+      .projects-list h4 {
+        margin: 0 0 0.2rem;
+        font-size: 1.02rem;
       }
 
       .project-meta {
-        margin: 0 0 0.6rem;
+        margin: 0 0 0.4rem;
         font-size: 0.8rem;
         text-transform: uppercase;
         letter-spacing: 0.08em;
         color: #6b7280;
       }
 
-      .project-card p {
+      .projects-list p {
         margin: 0;
         font-size: 0.9rem;
         color: #374151;
-      }
-
-      .project-card:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 16px 35px rgba(15, 23, 42, 0.12);
       }
 
       .analytics-badge {
@@ -476,61 +466,61 @@
           Quelques projets en cours de construction autour de l’IT, du réseau et de la cybersécurité.
         </p>
 
-        <div class="projects-grid">
-          <article class="project-card">
+        <ul class="projects-list">
+          <li>
             <h4>Site personnel &amp; portfolio</h4>
             <p class="project-meta">Projet web · GitHub Pages</p>
             <p>
               Création de ce site statique pour centraliser mon parcours, mes certificats
               et mes outils, tout en pratiquant le HTML, le CSS et Git.
             </p>
-          </article>
+          </li>
 
-          <article class="project-card">
+          <li>
             <h4>Laboratoire virtuel IT</h4>
             <p class="project-meta">Virtualisation · Proxmox / VMware / VirtualBox</p>
             <p>
               Mise en place d’un lab avec plusieurs machines virtuelles pour pratiquer
               l’administration système, le réseau et des scénarios de support.
             </p>
-          </article>
+          </li>
 
-          <article class="project-card">
+          <li>
             <h4>Déploiement de Zulip</h4>
             <p class="project-meta">Messagerie d’équipe · VM &amp; Docker</p>
             <p>
               Installation de Zulip sur une machine virtuelle puis en conteneur Docker,
               création des utilisateurs et tests de canaux de discussion.
             </p>
-          </article>
+          </li>
 
-          <article class="project-card">
+          <li>
             <h4>Pi-hole sur Raspberry Pi</h4>
             <p class="project-meta">DNS &amp; filtrage · Réseau domestique</p>
             <p>
               Installation de Pi-hole pour filtrer les requêtes DNS du réseau, avec gestion
               des listes de blocage et vérification du trafic.
             </p>
-          </article>
+          </li>
 
-          <article class="project-card">
+          <li>
             <h4>Home Assistant</h4>
             <p class="project-meta">Domotique · Automatisation</p>
             <p>
               Déploiement de Home Assistant pour centraliser et automatiser certains équipements
               à la maison, avec configuration de plusieurs intégrations.
             </p>
-          </article>
+          </li>
 
-          <article class="project-card">
+          <li>
             <h4>Nextcloud en conteneur Docker</h4>
             <p class="project-meta">Stockage · Auto‑hébergement</p>
             <p>
               Mise en place de Nextcloud en conteneur Docker pour disposer d’un espace
               de partage de fichiers auto‑hébergé.
             </p>
-          </article>
-        </div>
+          </li>
+        </ul>
       </section>
 
       <section id="competences">
