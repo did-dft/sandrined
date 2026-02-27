@@ -55,26 +55,24 @@
         gap: 0.5rem;
       }
 
-.nav-link {
-  font-size: 0.9rem;
-  text-decoration: none;
-  color: black;
-  padding: 0.35rem 0.7rem;
-  border-radius: 999px;
-  transition: background-color 0.15s ease, color 0.15s ease;
-}
+      .nav-link {
+        font-size: 0.9rem;
+        text-decoration: none;
+        color: black;
+        padding: 0.35rem 0.7rem;
+        border-radius: 999px;
+        transition: background-color 0.15s ease, color 0.15s ease;
+      }
 
-.nav-link:hover {
-  background: rgba(15, 23, 42, 0.03);
-  color: black;
-}
+      .nav-link:hover {
+        background: rgba(15, 23, 42, 0.03);
+        color: black;
+      }
 
-.nav-link.active {
-  background: rgba(75, 90, 213, 0.12);
-  color: black;
-}
-
-
+      .nav-link.active {
+        background: rgba(75, 90, 213, 0.12);
+        color: black;
+      }
 
       .topbar-right {
         display: flex;
@@ -261,26 +259,27 @@
 
       .btn-primary {
         background: var(--primary);
-        color: #ffffff;
+        color: black;
         box-shadow: 0 10px 25px rgba(75, 90, 213, 0.35);
       }
 
       .btn-primary:hover {
         background: var(--primary-dark);
+        color: black;
         transform: translateY(-1px);
         box-shadow: 0 14px 32px rgba(75, 90, 213, 0.45);
       }
 
       .btn-ghost {
         border: 1px solid rgba(15, 23, 42, 0.15);
-        color: #374151;
+        color: black;
         margin-left: 0.6rem;
         background: #ffffff;
       }
 
       .btn-ghost:hover {
         border-color: var(--primary);
-        color: var(--primary-dark);
+        color: black;
         transform: translateY(-1px);
         box-shadow: 0 8px 20px rgba(15, 23, 42, 0.12);
       }
@@ -321,22 +320,18 @@
       }
     </style>
   </head>
-<body>
-
-
-
+  <body>
     <header class="topbar">
       <div class="topbar-left">
         <span class="logo">sandrined</span>
-<nav class="topnav">
-  <a href="index.html" class="nav-link active">Accueil</a>
-  <a href="about.html" class="nav-link">À propos</a>
-  <a href="#projets" class="nav-link">Projets</a>
-  <a href="#competences" class="nav-link">Compétences</a>
-  <a href="#certificats" class="nav-link">Certificats</a>
-  <a href="#outils" class="nav-link">Outils</a>
-</nav>
-
+        <nav class="topnav">
+          <a href="index.html" class="nav-link active">Accueil</a>
+          <a href="about.html" class="nav-link">À propos</a>
+          <a href="#projets" class="nav-link">Projets</a>
+          <a href="#competences" class="nav-link">Compétences</a>
+          <a href="#certificats" class="nav-link">Certificats</a>
+          <a href="#outils" class="nav-link">Outils</a>
+        </nav>
       </div>
       <div class="topbar-right">
         <span class="top-icon">G</span>
@@ -372,31 +367,30 @@
         </div>
       </section>
 
-<section id="projets">
-  <h3>Mes projets</h3>
-  <p class="section-desc">
-    Quelques projets en cours de construction autour de l’IT, du réseau et de la cybersécurité.
-  </p>
-  <ul>
-    <li>
-      <strong>Projet 1 – Site personnel & portfolio</strong><br>
-      Création d’un site statique hébergé sur GitHub Pages pour centraliser mon parcours,
-      mes certificats (Cisco, Azure, etc.) et les outils que j’utilise, tout en apprenant
-      les bases du HTML, du CSS et de Git.
-    </li>
-    <li>
-      <strong>Projet 2 – Laboratoire virtuel</strong><br>
-      Mise en place d’un petit lab virtuel avec Proxmox, VMware ou VirtualBox pour pratiquer
-      l’administration système, le réseau et la cybersécurité dans un environnement isolé
-      (machines Linux, services réseau, scénarios de test).
-    </li>
-    <li>
-      <strong>Projet 3 – à venir</strong><br>
-      Idée à définir, probablement autour de la sécurisation d’un service ou d’un réseau simple.
-    </li>
-  </ul>
-</section>
-
+      <section id="projets">
+        <h3>Mes projets</h3>
+        <p class="section-desc">
+          Quelques projets en cours de construction autour de l’IT, du réseau et de la cybersécurité.
+        </p>
+        <ul>
+          <li>
+            <strong>Projet 1 – Site personnel &amp; portfolio</strong><br>
+            Création d’un site statique hébergé sur GitHub Pages pour centraliser mon parcours,
+            mes certificats (Cisco, Azure, etc.) et les outils que j’utilise, tout en apprenant
+            les bases du HTML, du CSS et de Git.
+          </li>
+          <li>
+            <strong>Projet 2 – Laboratoire virtuel pour l’IT et le support</strong><br>
+            Mise en place d’un petit lab virtuel avec Proxmox, VMware ou VirtualBox pour pratiquer
+            l’administration système, le réseau et la cybersécurité dans un environnement isolé
+            (machines Linux, services réseau, scénarios de test).
+          </li>
+          <li>
+            <strong>Projet 3 – à venir</strong><br>
+            Idée à définir, probablement autour de la sécurisation d’un service ou d’un réseau simple.
+          </li>
+        </ul>
+      </section>
 
       <section id="competences">
         <h3>Compétences</h3>
@@ -461,24 +455,24 @@
         </div>
       </section>
 
-<section id="outils">
-  <h3>Outils &amp; environnement</h3>
-  <p class="section-desc">
-    Les outils que j’utilise au quotidien pour apprendre, pratiquer et documenter.
-  </p>
-  <div class="badges">
-    <span class="badge">Visual Studio Code</span>
-    <span class="badge">Git &amp; GitHub</span>
-    <span class="badge">Cisco Packet Tracer</span>
-    <span class="badge">VirtualBox</span>
-    <span class="badge">PowerShell</span>
-    <span class="badge">SAP</span>
-    <span class="badge">Salesforce</span>
-    <span class="badge">Amazon Web Services (AWS)</span>
-    <span class="badge accent">Apprentissage autonome</span>
-  </div>
-</section>
-
+      <section id="outils">
+        <h3>Outils &amp; environnement</h3>
+        <p class="section-desc">
+          Les outils que j’utilise au quotidien pour apprendre, pratiquer et documenter,
+          ainsi que certains outils métier utilisés en environnement professionnel.
+        </p>
+        <div class="badges">
+          <span class="badge">Visual Studio Code</span>
+          <span class="badge">Git &amp; GitHub</span>
+          <span class="badge">VirtualBox</span>
+          <span class="badge">PowerShell</span>
+          <span class="badge">Cisco Packet Tracer</span>
+          <span class="badge">Amazon Web Services (AWS)</span>
+          <span class="badge">SAP (utilisation métier)</span>
+          <span class="badge">Salesforce (utilisation métier)</span>
+          <span class="badge accent">Apprentissage autonome</span>
+        </div>
+      </section>
 
       <section id="certificats">
         <h3>Certificats</h3>
@@ -487,7 +481,6 @@
         </p>
 
         <div class="cert-badges">
-          <!-- Badge 1 : Computer Hardware Basics -->
           <a class="cert-badge-item"
              href="https://www.credly.com/badges/9c57849c-e538-47db-9406-821746f2b6cf/public_url"
              target="_blank" rel="noopener">
@@ -496,7 +489,6 @@
             <span>Computer Hardware Basics</span>
           </a>
 
-          <!-- Badge 2 : Introduction to Cybersecurity -->
           <a class="cert-badge-item"
              href="https://www.credly.com/badges/ffb44076-f681-478f-bca1-09cb9717daa3/public_url"
              target="_blank" rel="noopener">
@@ -505,7 +497,6 @@
             <span>Introduction to Cybersecurity</span>
           </a>
 
-          <!-- Badge 3 : Linux Unhatched -->
           <a class="cert-badge-item"
              href="#"
              target="_blank" rel="noopener">
@@ -514,7 +505,6 @@
             <span>Linux Unhatched</span>
           </a>
 
-          <!-- Badge 4 : Introduction to Modern AI -->
           <a class="cert-badge-item"
              href="#"
              target="_blank" rel="noopener">
