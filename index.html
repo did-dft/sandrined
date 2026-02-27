@@ -112,29 +112,42 @@
       }
       .btn {
         display: inline-block;
-        padding: 0.6rem 1.3rem;
+        padding: 0.7rem 1.4rem;
         border-radius: 999px;
         text-decoration: none;
         font-size: 0.9rem;
-        font-weight: 500;
+        font-weight: 600;
+        letter-spacing: 0.03em;
+        transition: background-color 0.2s ease, color 0.2s ease,
+                    transform 0.2s ease, box-shadow 0.2s ease;
       }
+
       .btn-primary {
         background: var(--primary);
-        color: white;
+        color: #ffffff;
+        box-shadow: 0 10px 25px rgba(75, 90, 213, 0.35);
       }
+
       .btn-primary:hover {
         background: var(--primary-dark);
+        transform: translateY(-1px);
+        box-shadow: 0 14px 32px rgba(75, 90, 213, 0.45);
       }
+
       .btn-ghost {
-        border: 1px solid rgba(15,23,42,0.15);
-        color: #444;
+        border: 1px solid rgba(15, 23, 42, 0.15);
+        color: #374151;
         margin-left: 0.6rem;
-        background: white;
+        background: #ffffff;
       }
+
       .btn-ghost:hover {
         border-color: var(--primary);
         color: var(--primary-dark);
+        transform: translateY(-1px);
+        box-shadow: 0 8px 20px rgba(15, 23, 42, 0.12);
       }
+
       section {
         margin-top: 2.5rem;
       }
@@ -212,6 +225,20 @@
           <li>Projet 2 – à définir / en cours.</li>
           <li>Projet 3 – à définir / en cours.</li>
         </ul>
+      </section>
+
+            <section id="outils">
+        <h3>Outils & environnement</h3>
+        <p class="section-desc">
+          Les outils que j’utilise au quotidien pour apprendre, pratiquer et documenter.
+        </p>
+        <div class="badges">
+          <span class="badge">Visual Studio Code</span>
+          <span class="badge">Git &amp; GitHub</span>
+          <span class="badge">Cisco Packet Tracer</span>
+          <span class="badge">VirtualBox</span>
+          <span class="badge accent">Apprentissage autonome</span>
+        </div>
       </section>
 
 <section id="certificats">
