@@ -346,6 +346,19 @@
           text-align: left;
         }
       }
+
+      .analytics-badge {
+        position: fixed;
+        right: 16px;
+        bottom: 16px;
+        padding: 0.4rem 0.8rem;
+        border-radius: 999px;
+        background: rgba(15, 23, 42, 0.75);
+        color: #f9fafb;
+        font-size: 0.75rem;
+        box-shadow: 0 8px 20px rgba(15, 23, 42, 0.35);
+        z-index: 50;
+      }
     </style>
 
     <!-- Google tag (gtag.js) -->
@@ -393,15 +406,10 @@
             <span class="badge">Cybersécurité</span>
             <span class="badge accent">En apprentissage continu</span>
           </div>
-<div class="links">
-<div class="links">
-  <a class="btn btn-ghost" href="#certificats">Certificats</a>
-  <a class="btn btn-ghost" href="#projets">Projets</a>
-  <button class="btn btn-ghost" type="button">
-    Visiteurs actuels (via Analytics)
-  </button>
-</div>
-          
+          <div class="links">
+            <a class="btn btn-ghost" href="#certificats">Certificats</a>
+            <a class="btn btn-ghost" href="#projets">Projets</a>
+          </div>
         </div>
         <div class="hero-side">
           <div class="hero-pill">
@@ -725,5 +733,9 @@
         });
       });
     </script>
+
+    <div class="analytics-badge">
+      Visites suivies avec Google Analytics
+    </div>
   </body>
 </html>
